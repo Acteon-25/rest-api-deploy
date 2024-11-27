@@ -1,0 +1,28 @@
+GET http://localhost:3000/movies
+
+###
+GET http://localhost:3000/movies/b6e03689-cccd-478e-8565-d92f40813b13
+
+###
+GET http://localhost:3000/movies?genre=Action
+
+###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather",
+  "year": 1972,
+  "director": "Francis Ford Coppola",
+  "duration": 172,
+  "poster": "https://pics.filmaffinity.com/El_padrino-993414333-large.jpg",
+  "genre": ["Crime", "Drama"],
+}
+
+###
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1998
+}
