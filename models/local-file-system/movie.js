@@ -8,7 +8,7 @@
 //    - Delegar estas validaciones al modelo de datos siempre que sea posible, para centralizar la lógica de integridad.
 // Este enfoque asegura que la base de datos mantenga su consistencia y previene errores en operaciones de lectura/escritura.
 import { randomUUID } from "node:crypto"
-import { readJSON } from "../utils.js"
+import { readJSON } from "../../utils.js"
 
 const movies = readJSON("./movies.json")
 

@@ -21,7 +21,7 @@
 //    - Ayudan a guiar al usuario para completar formularios correctamente desde el principio.  
 // Este enfoque mejora significativamente la usabilidad y la percepción de la aplicación por parte del usuario.  
 
-import { MovieModel } from "../models/movie.js"
+import { MovieModel } from "../models/local-file-system/movie.js"
 import { validateMovie, validatePartialMovie } from "../schemas/movies.js"
 
 export class MovieController {
